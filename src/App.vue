@@ -9,18 +9,18 @@
   <NonCompliantButton @click="nonCompliantButtonHandler">
     Non Compliant
   </NonCompliantButton>
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <Marquee msg="Welcome to Your Vue.js App" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Marquee from './components/Marquee.vue'
 import Button from './components/Button.vue'
 import NonCompliantButton from './components/NonCompliantButton.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Marquee,
     Button,
     NonCompliantButton,
   },

@@ -7,7 +7,7 @@
     "plugin:vue/vue3-recommended"
   ],
   "rules": {
-    "vue/no-restricted-html-elements": ["error", "button"],
+    "vue/no-restricted-html-elements": ["error", "button", { "element": "marquee", "message": "I am a custom message" }],
     "vue/multi-word-component-names": 0
   }
 }
