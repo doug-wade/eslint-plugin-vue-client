@@ -7,9 +7,7 @@
     "plugin:vue/vue3-recommended"
   ],
   "rules": {
-    // override/add rules settings here, such as:
-    "vue/no-restricted-html-elements": ["error", "button", "NonCompliantButton"],
-    "vue/no-restricted-block": ["error", "button", "NonCompliantButton"],
+    "vue/no-restricted-html-elements": ["error", "button"],
     "vue/multi-word-component-names": 0
   }
 }

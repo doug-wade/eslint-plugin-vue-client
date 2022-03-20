@@ -1,24 +1,31 @@
-# vue-eslint-plugin-client
+# eslint-plugin-vue-client
 
-## Project setup
-```
-yarn install
-```
+Note the config for eslint-plugin-vue:
 
-### Compiles and hot-reloads for development
 ```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended"
+  ],
+  "rules": {
+    "vue/no-restricted-html-elements": ["error", "button"],
+    "vue/multi-word-component-names": 0
+  }
+}
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+» npm run lint
+
+> vue-eslint-plugin-client@0.1.0 lint
+> vue-cli-service lint
+
+/path/to/your/project/vue-eslint-plugin-client/src/components/NonCompliantButton.vue
+  4:5  error  Unexpected use of forbidden HTML element button  vue/no-restricted-html-elements
+
+✖ 1 problem (1 error, 0 warnings)
+```
