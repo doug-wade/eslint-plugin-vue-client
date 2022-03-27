@@ -3,26 +3,31 @@
     alt="Vue logo"
     src="./assets/logo.png"
   >
-  <Button @click="buttonClickHandler">
+  <AppButton @click="buttonClickHandler">
     Compliant
-  </Button>
+  </AppButton>
   <NonCompliantButton @click="nonCompliantButtonHandler">
     Non Compliant
   </NonCompliantButton>
-  <Marquee msg="Welcome to Your Vue.js App" />
+  <AppMarquee msg="Welcome to Your Vue.js App" />
+  <SlotProps>
+    <div>I'm a slot!</div>
+  </SlotProps>
 </template>
 
 <script>
-import Marquee from './components/Marquee.vue'
-import Button from './components/Button.vue'
+import AppMarquee from './components/AppMarquee.vue'
+import AppButton from './components/AppButton.vue'
 import NonCompliantButton from './components/NonCompliantButton.vue'
+import SlotProps from './components/SlotProps.vue'
 
 export default {
   name: 'App',
   components: {
-    Marquee,
-    Button,
+    AppMarquee,
+    AppButton,
     NonCompliantButton,
+    SlotProps,
   },
   methods: {
     buttonClickHandler() {

@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: "Marquee",
+    name: "AppMarquee",
     propsData: {
         msg: {
             type: String,
