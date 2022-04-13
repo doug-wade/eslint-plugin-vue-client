@@ -1,27 +1,7 @@
 <template>
-  <div>
-    <h1>Hello World!</h1>
-    <Button @click="console.log('foo')">
-      Click me!
-    </Button>
-  </div>
+  <AppButton />
 </template>
 
-<script>
-export default {
-    name: 'ScriptSetup',
-    mounted() {
-        console.log('mounted')
-    }
-}
+<script setup lang="ts">
+import AppButton from "@/components/AppButton.vue";
 </script>
-
-<script setup>
-import Button from '../Button.vue'
-</script>
-
-<style>
-h1 {
-    color: red;
-}
-</style>

@@ -5,10 +5,12 @@
 <script>
 import NonCompliantButton from './NonCompliantButton.vue'
 
+const someRandomName = '' + Math.random();
+
 export default {
-    name: 'ImportComponentName',
-    components: {
-        'some-random-name': NonCompliantButton,
-    }
+  name: 'ImportComponentName',
+  components: {
+    [someRandomName]: NonCompliantButton,
+  }
 }
 </script>

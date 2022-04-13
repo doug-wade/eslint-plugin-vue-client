@@ -7,11 +7,8 @@
     "plugin:vue/vue3-recommended"
   ],
   "rules": {
-    "vue/component-tags-order": ["error", {
-      "order": [ "template", "script", "script/setup", "style" ]
-    }],
-    "vue/no-restricted-html-elements": ["error", "button", "marquee"],
-    "vue/attribute-hyphenation": ["error", "always"],
-    "vue/match-component-import-name": ["error", { "casing": "kebab" , "prefix": "epvc-" }],
+    "vue/require-v-if-else-key": [
+      "error"
+    ]
   }
 }
